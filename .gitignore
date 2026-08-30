@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+
+# screenshots and images
+*.png
+*.jpg
+*.jpeg

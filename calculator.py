@@ -10,9 +10,6 @@ def calculate_total(subtotal, tax_rate, discount=0):
     """
     discounted = subtotal - discount
 
-    # BUG: tax is being calculated on the ORIGINAL subtotal instead of
-    # the discounted amount. This overcharges tax whenever a discount
-    # is applied.
-    total = discounted + (subtotal * tax_rate)
+    total = discounted + (discounted * tax_rate)
 
     return round(total, 2)
